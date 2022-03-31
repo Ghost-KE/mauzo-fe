@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {AuthService} from "./service/auth.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mauzo-fe';
+  isUserLoggedIn = false;
+
+  constructor(private authService: AuthService) {
+  }
+
+  ngOnInit() {
+    let storeData = localStorage.getItem('isUserLoggedIn');
+    console.log('StoreData: ' + storeData);
+
+    this.isUserLoggedIn = storeData != null && storeData == 'true';
+  }
 }
