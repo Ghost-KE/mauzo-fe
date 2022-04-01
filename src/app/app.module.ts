@@ -7,13 +7,15 @@ import {LoginComponent} from './login/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {LogoutComponent} from './logout/logout.component';
 import {WarehouseComponent} from './warehouse/warehouse.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     LogoutComponent,
-    WarehouseComponent
+    WarehouseComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

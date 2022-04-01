@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AuthService} from "../service/auth.service";
 import {Router} from "@angular/router";
 
@@ -9,17 +9,9 @@ import {Router} from "@angular/router";
 })
 export class WarehouseComponent implements OnInit {
 
-  constructor(
-    private authService: AuthService,
-    private router: Router
-  ) { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-
-  onLogout() {
-    this.authService.logout();
-    this.router.navigate(['/login']).then(r => {});
-  }
-
 }
