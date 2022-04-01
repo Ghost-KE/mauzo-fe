@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'logout', component: LogoutComponent},
   {path: 'warehouse', component: WarehouseComponent, canActivate: [ExpenseGuard]},
-  {path: '', redirectTo: '', pathMatch: 'full'}
+  {path: '', redirectTo: '/warehouse', pathMatch: 'full'}
 ];
 
 @NgModule({
