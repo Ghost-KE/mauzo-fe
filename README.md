@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6d73743-9d7f-4920-a8aa-a3f860718084/deploy-status)](https://app.netlify.com/sites/mauzo/deploys)
+
 # MauzoFe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
